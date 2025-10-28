@@ -3,12 +3,19 @@
  */
 package org.example;
 
+
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        Car c1 = new Car();
+        c1.setColor("red");
+        c1.setModel("208");
+
+        Car c2 = (Car) c1.clone();
+
+        System.out.println(c1);
+        System.out.println(c2);
+
+
     }
 }
