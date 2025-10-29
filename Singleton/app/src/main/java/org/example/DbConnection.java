@@ -8,7 +8,8 @@ public class DbConnection {
      * in this way you can instance a new {@link DbConnection}
      */
     private DbConnection(){
-
+        SessionDb sessionDb = new SessionDb();
+        sessionDb.connect();
     }
 
     /**
