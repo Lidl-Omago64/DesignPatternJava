@@ -1,8 +1,7 @@
 package org.example;
 
 public class DbConnection {
-    // SessionDb is a fake class, the behavior is that use this class for link the app with database
-    private static SessionDb instance;
+    private static DbConnection instance;
 
     /**
      * Private Constructor
@@ -16,9 +15,9 @@ public class DbConnection {
      * You Can Only use getInstance for enter in the db
      * @return
      */
-    public static SessionDb getInstance(){
+    public static DbConnection getInstance(){
         if(instance == null){
-            instance = new SessionDb();
+            instance = new DbConnection();
         }
         return instance;
     }
