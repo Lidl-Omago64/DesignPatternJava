@@ -10,10 +10,10 @@ public class App {
 
     public static void main(String[] args) {
         Builder b = new BuilderCasa();
-        b.setDoors(3);
-        b.setWalls(4);
-        b.setWindows(3);
-        b.setHasGarage(true);
+        b.setDoors(3)
+                .setWindows(4)
+                .setHasGarage(true)
+                .setDoors(5);
 
         System.out.println(b.build());
     }

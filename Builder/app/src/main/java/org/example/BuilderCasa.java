@@ -17,33 +17,39 @@ public class BuilderCasa implements Builder {
 
 
     @Override
-    public void setDoors(int doors) {
+    public Builder setDoors(int doors) {
         this.door = doors;
+        return this;
     }
 
     @Override
-    public void setWalls(int walls) {
+    public Builder setWalls(int walls) {
         this.walls = walls;
+        return this;
     }
 
     @Override
-    public void setWindows(int windows) {
+    public Builder setWindows(int windows) {
        this.window = windows;
+       return this;
     }
 
     @Override
-    public void setHasGarden(boolean hasGarden) {
+    public Builder setHasGarden(boolean hasGarden) {
         this.hasGarden = hasGarden;
+        return this;
     }
 
     @Override
-    public void setHasPool(boolean hasPool) {
+    public Builder setHasPool(boolean hasPool) {
        this.hasPool = hasPool;
+       return this;
     }
 
     @Override
-    public void setHasGarage(boolean hasGarage) {
+    public Builder setHasGarage(boolean hasGarage) {
         this.hasGarage = hasGarage;
+        return this;
     }
 
     public Casa build() {
