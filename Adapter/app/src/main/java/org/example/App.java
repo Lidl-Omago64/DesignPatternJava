@@ -13,7 +13,7 @@ public class App {
             LocalDate.of(2025, 1, 1),
              LocalDate.of(2025, 12, 31)
              );
-        CalendarAdapter calendarAdapter = new CalendarAdapter(calendarLibrary);
+        AdapterCalendarInterface calendarAdapter = new CalendarAdapter(calendarLibrary);
         calendarAdapter.add("Event 1", LocalDate.of(2025, 1, 1));
         calendarAdapter.add("Event 2", LocalDate.of(2025, 1, 2));
         calendarAdapter.getAll();

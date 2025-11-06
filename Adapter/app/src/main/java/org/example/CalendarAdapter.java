@@ -2,7 +2,7 @@ package org.example;
 
 import java.time.LocalDate;
 
-public class CalendarAdapter {
+public class CalendarAdapter implements AdapterCalendarInterface {
     private CalendarLibrary calendarLibrary;
 
     public CalendarAdapter(CalendarLibrary calendarLibrary) {
