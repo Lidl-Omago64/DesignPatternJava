@@ -3,12 +3,19 @@
  */
 package org.example;
 
+import java.time.LocalDate;
+
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        CalendarLibrary calendarLibrary = new CalendarLibrary(
+            LocalDate.of(2025, 1, 1),
+             LocalDate.of(2025, 12, 31)
+             );
+        CalendarAdapter calendarAdapter = new CalendarAdapter(calendarLibrary);
+        calendarAdapter.add("Event 1", LocalDate.of(2025, 1, 1));
+        calendarAdapter.add("Event 2", LocalDate.of(2025, 1, 2));
+        calendarAdapter.getAll();
     }
 }
